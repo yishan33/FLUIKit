@@ -1,0 +1,6 @@
+framework module FLUIKit {
+  umbrella header "FLUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

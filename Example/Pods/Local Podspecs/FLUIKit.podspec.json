@@ -1,0 +1,22 @@
+{
+  "name": "FLUIKit",
+  "version": "0.1.0",
+  "summary": "A short description of FLUIKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/021159/FLUIKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "021159": "liufushan@htsc.com"
+  },
+  "source": {
+    "git": "https://github.com/021159/FLUIKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "FLUIKit/Classes/**/*"
+}
