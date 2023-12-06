@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0D4EB56B7E2E74167C3ED3E873C165 /* FLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B49FAD5609A90BF9B053E62B916C865 /* FLTextView.m */; };
 		14FE2541040F436BD67F1D5304076537 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		1F84FE646CD1D7BAFFB58C243277AFF8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
@@ -21,82 +22,83 @@
 		5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
 		640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		68F025461CAFEBD28643FEBC3B086F76 /* FLTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6778DE21C98E60E4C7779BEE8AABBF /* FLTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
 		77F2752053A39367021C316123853E96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
 		875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
 		8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
-		A87DC3567D6BBEAE94589E2F1062D56F /* FLUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BF81F095FE28A83F7ED701D2CA73E7 /* FLUIKit-dummy.m */; };
 		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
-		C1DC0ABFE6AC28F0760670A78F9A1636 /* FLUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C50B2E2EEC2B644945FD9AFD1BF64BC8 /* FLUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
 		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
-		DDA661EE8283376D27230E27DEDDDAB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		CF8089C374972F37F3215223E4876C3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		EC039416BDEEC36EEAD885CD4D171A40 /* Pods-FLUIKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 800F61618E506E9262C0F836DAD12B6B /* Pods-FLUIKit_Tests-dummy.m */; };
+		F06C5BFA16332887C4BA8D33FE5F393B /* FLUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C052C5DB3201B4C9A15A3AC05A4B97C5 /* FLUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4A0991B2F4FE37C476CD648D872FC97 /* FLUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFEF7C885A65F642D9031972BEE0A9A /* FLUIKit-dummy.m */; };
 		F4E0A134C56B48B4634F9CF134CAA725 /* Pods-FLUIKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4902A53B3B8367269854E62CF255B81E /* Pods-FLUIKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAB8BCD36A3D9C385632C0FAB6249B0E /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C35F25373B2284C4977F6000AA1079C /* ReplaceMe.m */; };
 		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		33A56213D3B5E651899DFCB755D022E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
-			remoteInfo = FBSnapshotTestCase;
-		};
-		74A64FCFBDECE7CE7BD695DC895CE7EB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4F08F73F80BF0E9C2B971A85A9E8D5C7;
-			remoteInfo = "Pods-FLUIKit_Example";
-		};
-		CA05E7DBAD9B897DD6215D202B5E34F8 /* PBXContainerItemProxy */ = {
+		038FB864E85E649E484AAA5BA09BC41E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B1C1F94BDCD1B008FB54B9C3B738AC0B;
 			remoteInfo = FLUIKit;
 		};
+		4C2355C712FA1EEE5001A9040877532D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F08F73F80BF0E9C2B971A85A9E8D5C7;
+			remoteInfo = "Pods-FLUIKit_Example";
+		};
+		92A767FFB8D3494EB92ADF7F53F651CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
+			remoteInfo = FBSnapshotTestCase;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AEE4FB8DA271B2011DBCA323B80900A /* FLUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FLUIKit.debug.xcconfig; sourceTree = "<group>"; };
-		0C9FFBB1A24F48FAD8AE8EA9A7592FF3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0B49FAD5609A90BF9B053E62B916C865 /* FLTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTextView.m; path = FLUIKit/Classes/FLTextView.m; sourceTree = "<group>"; };
+		0D89239C6A2F8174FEA7505FDAB1D770 /* FLUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLUIKit-prefix.pch"; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		118D2A98BC1E023FC15700DF331700E4 /* FLUIKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FLUIKit; path = FLUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		2281AAEF5898433B0D62069786A52A5B /* FLUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FLUIKit.release.xcconfig; sourceTree = "<group>"; };
 		22D130E703B66CFF85012C89A44FEC37 /* Pods-FLUIKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FLUIKit_Example-Info.plist"; sourceTree = "<group>"; };
 		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		277ED3A87548FEC8DCA8175C4CD89690 /* Pods-FLUIKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FLUIKit_Example"; path = Pods_FLUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
-		286F8AAD802C65A35D45B27DA489788A /* FLUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FLUIKit.modulemap; sourceTree = "<group>"; };
+		2C13B44B1433F6845CAFAC18A75D78BB /* FLUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FLUIKit-Info.plist"; sourceTree = "<group>"; };
 		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		3B369740C65107CF975AE7946C206C06 /* FLUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FLUIKit.debug.xcconfig; sourceTree = "<group>"; };
 		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		42128F92210129760D41542DF0ECB7CF /* Pods-FLUIKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FLUIKit_Tests-Info.plist"; sourceTree = "<group>"; };
 		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		4902A53B3B8367269854E62CF255B81E /* Pods-FLUIKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FLUIKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4946D3E1727AB0A83735D8516C43A804 /* Pods-FLUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FLUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
-		5160B53F279EC829D0D5E5D9663A09A3 /* FLUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FLUIKit.release.xcconfig; sourceTree = "<group>"; };
+		4D6778DE21C98E60E4C7779BEE8AABBF /* FLTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTextView.h; path = FLUIKit/Classes/FLTextView.h; sourceTree = "<group>"; };
 		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA5AA7F85FCD99A101A84E1FF94C243 /* Pods-FLUIKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FLUIKit_Tests.modulemap"; sourceTree = "<group>"; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		6C35F25373B2284C4977F6000AA1079C /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = FLUIKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		773792D12D1428F79F208058FE0389A1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		800F61618E506E9262C0F836DAD12B6B /* Pods-FLUIKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FLUIKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		81E8662B4D84EBB651D7D02B8708BA68 /* Pods-FLUIKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FLUIKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		84F36D8742328B814B5358C24774E4EC /* Pods-FLUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FLUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		8A72C760DE3EB4BAA9F33437242698FF /* FLUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FLUIKit-Info.plist"; sourceTree = "<group>"; };
 		8B24103D9B00B0F0A6B4C1DCE0B792CA /* Pods-FLUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FLUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8DA78AB8FA90014DA94769846A658B10 /* Pods-FLUIKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FLUIKit_Example.modulemap"; sourceTree = "<group>"; };
 		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
@@ -105,24 +107,24 @@
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		97B4B778DD2DC88913AC25A025D52C70 /* Pods-FLUIKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FLUIKit_Tests"; path = Pods_FLUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2109B84AC6F1523D4CE5F33AD74A885 /* Pods-FLUIKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FLUIKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A2E19569AF313F4E9622C0341F9F8389 /* Pods-FLUIKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FLUIKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		AA240A4160252AF6D915531ACFC56C5B /* FLUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FLUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		B027DDA98C5D7AEBD742F8438CD1D73B /* FLUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FLUIKit.modulemap; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		BA6B7A989898B11E7F268CE64E3624BB /* Pods-FLUIKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FLUIKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		C50B2E2EEC2B644945FD9AFD1BF64BC8 /* FLUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLUIKit-umbrella.h"; sourceTree = "<group>"; };
+		BFFEF7C885A65F642D9031972BEE0A9A /* FLUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FLUIKit-dummy.m"; sourceTree = "<group>"; };
+		C052C5DB3201B4C9A15A3AC05A4B97C5 /* FLUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLUIKit-umbrella.h"; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		CD04441ABC9786C86BE2402144186939 /* Pods-FLUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FLUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		CE3E2E9E29C1A031EDFBADFD6DB3E544 /* Pods-FLUIKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FLUIKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		D17D80DD354203100AD43D7E4D91CBC7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		DC6DD8809E165210DD8F7E83CC8F9999 /* Pods-FLUIKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FLUIKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		E2BF81F095FE28A83F7ED701D2CA73E7 /* FLUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FLUIKit-dummy.m"; sourceTree = "<group>"; };
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E9F0710725067AE35972E53E35E83C52 /* FLUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FLUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F0020DB30007192DA1750F0F0C728EB0 /* FLUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLUIKit-prefix.pch"; sourceTree = "<group>"; };
+		F012C44C75E0715A4D1777745955D859 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F2C355CEA24A8B184F619549E44C9AAC /* Pods-FLUIKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FLUIKit_Example-dummy.m"; sourceTree = "<group>"; };
 		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,11 +138,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76C88BCD6DF0F896D7573CA49A87AF8A /* Frameworks */ = {
+		93B3E3E66BFD6C82DBC4FD2F8DD97E30 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDA661EE8283376D27230E27DEDDDAB2 /* Foundation.framework in Frameworks */,
+				CF8089C374972F37F3215223E4876C3A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,27 +196,16 @@
 			path = "Target Support Files/Pods-FLUIKit_Tests";
 			sourceTree = "<group>";
 		};
-		3351C53BB0B2BE6AA129EF23C143E3E8 /* Development Pods */ = {
+		348D6AC1E65E8772F7CDA43E55CA5B75 /* FLUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				EAF9C5ECD35629929FB1110E875C584D /* FLUIKit */,
+				4D6778DE21C98E60E4C7779BEE8AABBF /* FLTextView.h */,
+				0B49FAD5609A90BF9B053E62B916C865 /* FLTextView.m */,
+				69272D422BB70057E9CBDF6E6FF85CB6 /* Pod */,
+				653F0EF929C4DA78E00EC3F7AF3BDE6E /* Support Files */,
 			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		41E65226F887661112D4E9B679A527FA /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				286F8AAD802C65A35D45B27DA489788A /* FLUIKit.modulemap */,
-				E2BF81F095FE28A83F7ED701D2CA73E7 /* FLUIKit-dummy.m */,
-				8A72C760DE3EB4BAA9F33437242698FF /* FLUIKit-Info.plist */,
-				F0020DB30007192DA1750F0F0C728EB0 /* FLUIKit-prefix.pch */,
-				C50B2E2EEC2B644945FD9AFD1BF64BC8 /* FLUIKit-umbrella.h */,
-				0AEE4FB8DA271B2011DBCA323B80900A /* FLUIKit.debug.xcconfig */,
-				5160B53F279EC829D0D5E5D9663A09A3 /* FLUIKit.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/FLUIKit";
+			name = FLUIKit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		4BA2479549DD918290454B1CDCD0B92B /* Core */ = {
@@ -238,12 +229,27 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		62E5986CBA0607EFC2B2F0E80896D437 /* Pod */ = {
+		653F0EF929C4DA78E00EC3F7AF3BDE6E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E9F0710725067AE35972E53E35E83C52 /* FLUIKit.podspec */,
-				0C9FFBB1A24F48FAD8AE8EA9A7592FF3 /* LICENSE */,
-				D17D80DD354203100AD43D7E4D91CBC7 /* README.md */,
+				B027DDA98C5D7AEBD742F8438CD1D73B /* FLUIKit.modulemap */,
+				BFFEF7C885A65F642D9031972BEE0A9A /* FLUIKit-dummy.m */,
+				2C13B44B1433F6845CAFAC18A75D78BB /* FLUIKit-Info.plist */,
+				0D89239C6A2F8174FEA7505FDAB1D770 /* FLUIKit-prefix.pch */,
+				C052C5DB3201B4C9A15A3AC05A4B97C5 /* FLUIKit-umbrella.h */,
+				3B369740C65107CF975AE7946C206C06 /* FLUIKit.debug.xcconfig */,
+				2281AAEF5898433B0D62069786A52A5B /* FLUIKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FLUIKit";
+			sourceTree = "<group>";
+		};
+		69272D422BB70057E9CBDF6E6FF85CB6 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				AA240A4160252AF6D915531ACFC56C5B /* FLUIKit.podspec */,
+				F012C44C75E0715A4D1777745955D859 /* LICENSE */,
+				773792D12D1428F79F208058FE0389A1 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -295,7 +301,6 @@
 				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
 				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -303,7 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				3351C53BB0B2BE6AA129EF23C143E3E8 /* Development Pods */,
+				FF5F6F4376DB46387C8FFE8FEF8E43C5 /* Development Pods */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
 				E81A37DBDE41E671312C56736544E2FA /* Pods */,
 				205526413646AD57678CDCEFEF33EB5E /* Products */,
@@ -336,17 +341,6 @@
 			path = "Target Support Files/Pods-FLUIKit_Example";
 			sourceTree = "<group>";
 		};
-		EAF9C5ECD35629929FB1110E875C584D /* FLUIKit */ = {
-			isa = PBXGroup;
-			children = (
-				6C35F25373B2284C4977F6000AA1079C /* ReplaceMe.m */,
-				62E5986CBA0607EFC2B2F0E80896D437 /* Pod */,
-				41E65226F887661112D4E9B679A527FA /* Support Files */,
-			);
-			name = FLUIKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		FB2668559AE577E6E8078C0C291AD417 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +350,14 @@
 				E658F388F01C72599CA75537950B6095 /* XCTest.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		FF5F6F4376DB46387C8FFE8FEF8E43C5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				348D6AC1E65E8772F7CDA43E55CA5B75 /* FLUIKit */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,11 +371,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C58B2D0CB0303CDA8B58AC57447B09E9 /* Headers */ = {
+		BAE1D09D98322DC950CFC29DA3D0FB10 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1DC0ABFE6AC28F0760670A78F9A1636 /* FLUIKit-umbrella.h in Headers */,
+				68F025461CAFEBD28643FEBC3B086F76 /* FLTextView.h in Headers */,
+				F06C5BFA16332887C4BA8D33FE5F393B /* FLUIKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +418,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D77EFAAD170EB15E786C941C3D7CED41 /* PBXTargetDependency */,
+				66EE20439D55B8E2C0D9EC46721E8D79 /* PBXTargetDependency */,
 			);
 			name = "Pods-FLUIKit_Example";
 			productName = Pods_FLUIKit_Example;
@@ -452,8 +455,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				564EF67CF0859513111440D70BD2CC33 /* PBXTargetDependency */,
-				21F9B466D9B2E16B47A7E7C7FD5CB0D2 /* PBXTargetDependency */,
+				C3D84142204D17209BD92AA492037349 /* PBXTargetDependency */,
+				5763E815BFBE79D9C3352A557BD21953 /* PBXTargetDependency */,
 			);
 			name = "Pods-FLUIKit_Tests";
 			productName = Pods_FLUIKit_Tests;
@@ -462,12 +465,12 @@
 		};
 		B1C1F94BDCD1B008FB54B9C3B738AC0B /* FLUIKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B28DED2FAB15A035175BEC2954A352A /* Build configuration list for PBXNativeTarget "FLUIKit" */;
+			buildConfigurationList = EC71D80D3A29FE8100121588CD631D7C /* Build configuration list for PBXNativeTarget "FLUIKit" */;
 			buildPhases = (
-				C58B2D0CB0303CDA8B58AC57447B09E9 /* Headers */,
-				AB480F5F07C4287D933B9318AACEE347 /* Sources */,
-				76C88BCD6DF0F896D7573CA49A87AF8A /* Frameworks */,
-				F58BA052CAAD89067EEB92E73016ADC0 /* Resources */,
+				BAE1D09D98322DC950CFC29DA3D0FB10 /* Headers */,
+				6F1A8E0D03521F3E5EA91A16335B64C0 /* Sources */,
+				93B3E3E66BFD6C82DBC4FD2F8DD97E30 /* Frameworks */,
+				5EE96CECBEF6B3792E249CD41087F285 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -523,14 +526,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F781EDC0B06E27ECB07F431B51BCF4F /* Resources */ = {
+		5EE96CECBEF6B3792E249CD41087F285 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F58BA052CAAD89067EEB92E73016ADC0 /* Resources */ = {
+		5F781EDC0B06E27ECB07F431B51BCF4F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -548,12 +551,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB480F5F07C4287D933B9318AACEE347 /* Sources */ = {
+		6F1A8E0D03521F3E5EA91A16335B64C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A87DC3567D6BBEAE94589E2F1062D56F /* FLUIKit-dummy.m in Sources */,
-				FAB8BCD36A3D9C385632C0FAB6249B0E /* ReplaceMe.m in Sources */,
+				0D0D4EB56B7E2E74167C3ED3E873C165 /* FLTextView.m in Sources */,
+				F4A0991B2F4FE37C476CD648D872FC97 /* FLUIKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,23 +587,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		21F9B466D9B2E16B47A7E7C7FD5CB0D2 /* PBXTargetDependency */ = {
+		5763E815BFBE79D9C3352A557BD21953 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-FLUIKit_Example";
 			target = 4F08F73F80BF0E9C2B971A85A9E8D5C7 /* Pods-FLUIKit_Example */;
-			targetProxy = 74A64FCFBDECE7CE7BD695DC895CE7EB /* PBXContainerItemProxy */;
+			targetProxy = 4C2355C712FA1EEE5001A9040877532D /* PBXContainerItemProxy */;
 		};
-		564EF67CF0859513111440D70BD2CC33 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FBSnapshotTestCase;
-			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = 33A56213D3B5E651899DFCB755D022E4 /* PBXContainerItemProxy */;
-		};
-		D77EFAAD170EB15E786C941C3D7CED41 /* PBXTargetDependency */ = {
+		66EE20439D55B8E2C0D9EC46721E8D79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FLUIKit;
 			target = B1C1F94BDCD1B008FB54B9C3B738AC0B /* FLUIKit */;
-			targetProxy = CA05E7DBAD9B897DD6215D202B5E34F8 /* PBXContainerItemProxy */;
+			targetProxy = 038FB864E85E649E484AAA5BA09BC41E /* PBXContainerItemProxy */;
+		};
+		C3D84142204D17209BD92AA492037349 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
+			targetProxy = 92A767FFB8D3494EB92ADF7F53F651CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -670,9 +673,9 @@
 			};
 			name = Release;
 		};
-		2EC9939529AEF3F6035A3318786022E7 /* Debug */ = {
+		560CCE48693FA2FBF0239CBCA1758925 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0AEE4FB8DA271B2011DBCA323B80900A /* FLUIKit.debug.xcconfig */;
+			baseConfigurationReference = 3B369740C65107CF975AE7946C206C06 /* FLUIKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -789,8 +792,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -825,6 +827,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		B51747F06250ADEDF1825A46EA026A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2281AAEF5898433B0D62069786A52A5B /* FLUIKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FLUIKit/FLUIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FLUIKit/FLUIKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FLUIKit/FLUIKit.modulemap";
+				PRODUCT_MODULE_NAME = FLUIKit;
+				PRODUCT_NAME = FLUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		CE7B322555CD71CEB60BC331D22E108C /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -959,38 +993,6 @@
 			};
 			name = Debug;
 		};
-		E94886D0614FBD4B2F2DA51CA0F9E242 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5160B53F279EC829D0D5E5D9663A09A3 /* FLUIKit.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FLUIKit/FLUIKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FLUIKit/FLUIKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FLUIKit/FLUIKit.modulemap";
-				PRODUCT_MODULE_NAME = FLUIKit;
-				PRODUCT_NAME = FLUIKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -999,15 +1001,6 @@
 			buildConfigurations = (
 				842C60C4F1EBC85F9C8FF97D39D120FF /* Debug */,
 				0CF977E736A9F0297ED689DCD07C3E1C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3B28DED2FAB15A035175BEC2954A352A /* Build configuration list for PBXNativeTarget "FLUIKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2EC9939529AEF3F6035A3318786022E7 /* Debug */,
-				E94886D0614FBD4B2F2DA51CA0F9E242 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1026,6 +1019,15 @@
 			buildConfigurations = (
 				583B378AC2FEE38B68C69801C8EAA32F /* Debug */,
 				CE7B322555CD71CEB60BC331D22E108C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC71D80D3A29FE8100121588CD631D7C /* Build configuration list for PBXNativeTarget "FLUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				560CCE48693FA2FBF0239CBCA1758925 /* Debug */,
+				B51747F06250ADEDF1825A46EA026A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "FLTextView.h"
 
 FOUNDATION_EXPORT double FLUIKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char FLUIKitVersionString[];
