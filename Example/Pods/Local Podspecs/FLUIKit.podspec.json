@@ -3,20 +3,25 @@
   "version": "0.1.0",
   "summary": "A short description of FLUIKit.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/021159/FLUIKit",
+  "homepage": "https://github.com/yishan33/FLUIKit.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "021159": "liufushan@htsc.com"
+    "forthonliu": "fsliu33@163.com"
   },
   "source": {
-    "git": "https://github.com/021159/FLUIKit.git",
+    "git": "https://github.com/yishan33/FLUIKit.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "FLUIKit/Classes/**/*"
+  "source_files": "FLUIKit/Classes/**/*",
+  "dependencies": {
+    "Masonry": [
+      "~> 1.1.0"
+    ]
+  }
 }

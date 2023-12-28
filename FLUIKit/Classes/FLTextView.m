@@ -9,7 +9,7 @@
 
 @interface FLTextView () <UITextViewDelegate>
 
-@property (nonatomic, strong) UITextView *placeholderView;
+@property (nonatomic, strong) UITextView *placeholderTextView;
 
 @property (nonatomic, strong) NSNumber *originalHeight;
 
@@ -27,7 +27,7 @@
 
 - (void)setupUI
 {
-    [self addSubview:self.placeholderView];
+    [self addSubview:self.placeholderTextView];
     self.maxNumberOfLines = 2;
     self.delegate = self;
 }
@@ -35,17 +35,28 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    self.placeholderView.frame = self.bounds;
+    self.placeholderTextView.frame = self.bounds;
 }
 
 #pragma mark - UITextView Delegate
 
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    if (self.maxNumberOfCharacter > 0) {
+        BOOL isBeyond = textView.text.length + (text.length - range.length) > self.maxNumberOfCharacter;
+        if (self.flDelegate && [self.flDelegate respondsToSelector:@selector(beyondMaxCharacterOnTextView:)]) {
+            [self.flDelegate beyondMaxCharacterOnTextView:self];
+        }
+        return !isBeyond;
+    }
+    return YES;
+}
+
 - (void)textViewDidChange:(UITextView *)textView
 {
     if (!self.text.length || self.text.length == 0) {
-        self.placeholderView.hidden = NO;
+        self.placeholderTextView.hidden = NO;
     } else {
-        self.placeholderView.hidden = YES;
+        self.placeholderTextView.hidden = YES;
     }
     [self updateHight];
 }
@@ -80,48 +91,65 @@
     CGRect frame = self.frame;
     frame.size.height = height;
     
-    if (self.heightWillChangeBlock) {
-        self.heightWillChangeBlock(frame.size.height);
+    if (self.flDelegate && [self.flDelegate respondsToSelector:@selector(onTextView:heightWillChange:)]) {
+        [self.flDelegate onTextView:self heightWillChange:height];
     }
     
-    [UIView animateWithDuration:0.25 animations:^{
-        self.frame = frame;
-    }];
-    
-    if (self.heightDidChangeBlock) {
-        self.heightDidChangeBlock(frame.size.height);
+    if (self.flDelegate && [self.flDelegate respondsToSelector:@selector(onTextView:heightDidChange:)]) {
+        [self.flDelegate onTextView:self heightDidChange:height];
     }
 }
 
 #pragma mark - Setter
 
+- (void)setText:(NSString *)text
+{
+    [super setText:text];
+    [self textViewDidChange:self];
+}
+
+- (void)setTextContainerInset:(UIEdgeInsets)textContainerInset
+{
+    [super setTextContainerInset:textContainerInset];
+    self.placeholderTextView.textContainerInset = textContainerInset;
+}
+
 - (void)setFont:(UIFont *)font
 {
     [super setFont:font];
-    self.placeholderView.font = font;
+    self.placeholderTextView.font = font;
 }
 
 - (void)setPlaceholderText:(NSString *)placeholderText
 {
-    self.placeholderView.text = placeholderText;
+    self.placeholderTextView.text = placeholderText;
 }
 
 - (void)setPlaceholderColor:(UIColor *)placeholderColor
 {
-    self.placeholderView.textColor = placeholderColor;
+    self.placeholderTextView.textColor = placeholderColor;
+}
+
+- (void)setCornerRadius:(CGFloat)cornerRadius
+{
+    self.layer.cornerRadius = cornerRadius;
+    self.placeholderTextView.layer.cornerRadius = cornerRadius;
 }
 
 #pragma mark - Getter
 
-- (UITextView *)placeholderView
+- (UITextView *)placeholderTextView
 {
-    if (!_placeholderView) {
-        _placeholderView = [[UITextView alloc] init];
-        _placeholderView.userInteractionEnabled = NO;
+    if (!_placeholderTextView) {
+        _placeholderTextView = [[UITextView alloc] init];
+        _placeholderTextView.userInteractionEnabled = NO;
+        _placeholderTextView.layer.borderColor = UIColor.clearColor.CGColor;
+        _placeholderTextView.layer.borderWidth = 0;
+        _placeholderTextView.backgroundColor = UIColor.clearColor;
+        
     }
-    return _placeholderView;
+    return _placeholderTextView;
 }
-
 
 - (NSNumber *)originalHeight {
     if (!_originalHeight) {

@@ -9,9 +9,21 @@
 
 typedef void (^FLTextViewHeightBlock)(CGFloat heigth);
 
-NS_ASSUME_NONNULL_BEGIN
+@class FLTextView;
+
+@protocol FLTextViewDelegate <NSObject>
+
+- (void)onTextView:(FLTextView *)textView heightWillChange:(CGFloat)height;
+
+- (void)onTextView:(FLTextView *)textView heightDidChange:(CGFloat)height;
+
+- (void)beyondMaxCharacterOnTextView:(FLTextView *)textView;
+
+@end
 
 @interface FLTextView : UITextView
+
+@property (nonatomic, weak) id<FLTextViewDelegate>flDelegate;
 
 @property (nonatomic, copy) NSString *placeholderText;
 
@@ -19,10 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSUInteger maxNumberOfLines;
 
-@property (nonatomic, copy) FLTextViewHeightBlock heightWillChangeBlock;
+@property (nonatomic, assign) NSUInteger maxNumberOfCharacter;
 
-@property (nonatomic, copy) FLTextViewHeightBlock heightDidChangeBlock;
+@property (nonatomic, assign) CGFloat cornerRadius;
 
 @end
-
-NS_ASSUME_NONNULL_END
